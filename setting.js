@@ -32,13 +32,13 @@ global.limitawal = {
 }
 global.thumb = fs.readFileSync('./media/image/tio.jpg')
 global.faall = fs.readFileSync('./media/image/fake.jpg')
-global.mygit = 'https://github.com/BOTCAHX'
-global.webmy = 'https://api.botcahx.biz.id'
-global.ghme = 'https://github.com/BOTCAHX'
-global.gcbot = "https://api.botcahx.biz.id"
-global.botname = 'BOTCAHX'
-global.omlen = '© TioXd'
-global.weem = 'BOTCAHX'
+global.mygit = 'https://github.com/AkuIyan'
+global.webmy = 'https://portofolio.akuiyan.repl.co'
+global.ghme = 'https://github.com/AkuIyan'
+global.gcbot = "https://chat.whatsapp.com/C3IAVrX1RzFIOsTP0Fpqe8"
+global.botname = 'Chizuya Imoet'
+global.omlen = '© Iyan'
+global.weem = 'Iyan Ganteng'
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 	fs.unwatchFile(file)
