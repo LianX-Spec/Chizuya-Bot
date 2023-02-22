@@ -1,10 +1,10 @@
 const fs = require('fs')
 const chalk = require('chalk')
-global.owner = ['6281395861695']
-global.ownernomer = "6281395861695"
-global.premium = ['6281395861695']
+global.owner = ['6285742344873']
+global.ownernomer = "6285742344873"
+global.premium = ['']
 global.packname = 'Sticker By'
-global.author = 'BOTCAHX'
+global.author = 'Iyan Ganteng\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
 global.sessionName = 'session'
 global.jumlha = '999'
 global.jumhal = '100000000000000'
