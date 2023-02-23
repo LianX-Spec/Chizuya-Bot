@@ -33,11 +33,11 @@ const hariiini = moment.tz('Asia/Jakarta').format('DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const esce = ('© TioXd')
+const esce = ('© Iyan Kun')
 const ini_kangbaned = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 global.prem = require("./lib/premium")
-gambar = fs.readFileSync('./media/image/tio.jpg')
+gambar = fs.readFileSync('./fto/yaa.jpeg')
 //TIME
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')  
  if(time2 < "23:59:00"){
@@ -3345,7 +3345,7 @@ let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, 
             break
             case 'sponsor': {
             if (!m.isGroup) throw mess.group
-            let qontak = `6285718971848@s.whatsapp.net`
+            let qontak = `6285742344873@s.whatsapp.net`
 let dana = `6281911500445@s.whatsapp.net`
 let shopeeotp = `6285574670796@s.whatsapp.net`
 let shopee = `622150996855@s.whatsapp.net`
@@ -3370,14 +3370,15 @@ let alfamart = `628111500959@s.whatsapp.net`
             case 'menu': {
             let ownernya = '0@s.whatsapp.net'
             let me = m.sender
-            let jawab = `*${ucapanWaktu}*
+            let ments = [ownernya, me, ini_kangbaned]
+                anu = `*${ucapanWaktu}*
+                *${ucapanWaktu}*
 ╭──❍「 *INFO USER* 」❍
 ├ *Nama* : ${pushname}
 ├ *Number* : @${me.split('@')[0]}
 ├ *Premium* : ${isPremium ? 'Yes' : `No`}
 ├ *Limit* : ${isPremium ? 'Infinity' : `${db.data.users[m.sender].limit}`}
 ╰──❍
-
 ╭──❍「 *INFO BOT* 」❍
 ├ *Nama Bot* : ${botname}
 ├ *Powered* :\n├ *@${ini_kangbaned.split('@')[0]}*
@@ -3386,443 +3387,12 @@ let alfamart = `628111500959@s.whatsapp.net`
 ├ *Total Hit* : ${jumlahcmd}
 ├ *Total Hit Today* : ${jumlahharian}
 ╰──❍
-
 ╭──❍「 *INDONESIA* 」❍
 ├ *Hari Ini* :\n├ *${hariini}*
 ├ *Wib* : ${barat} WIB
 ├ *Wita* : ${tengah} WITA
 ├ *Wit* : ${timur} WIT
-╰──❍`
-            let ments = [ownernya, me, ini_kangbaned]
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'ping', buttonText: { displayText: 'Speed' }, type: 1 },{ buttonId: 'simplemenu', buttonText: { displayText: 'List Menu' }, type: 1 }]
-            let buttonMessage = {
-  document: fs.readFileSync('./media/doc/fake.pptx'),
-  fileName : omlen + (` | Halo ${pushname}`),
-  mimetype: `${filsk}`,
-  fileLength: jumhal,
-  pageCount: jumlha,
-  caption: jawab,
-  footer: esce,
-  buttons: buttons,
-  mentions: ments,
-  headerType: 4,
-  contextInfo:{externalAdReply:{
-  title: 'Bot WhatsApp',
-  body: 'Jangan Spam!', 
-  showAdAttribution: true,
-  thumbnail: thumb,
-  mediaType: 2,
-  mediaUrl: ghme,
-  sourceUrl: webmy
-  }}
-  }
-  tio.sendMessage(m.chat, buttonMessage, {quoted: fkontak})
-  }
- break
-            case 'simplemenu': case 'list': case 'help': {
-            let ownernya = '0@s.whatsapp.net'
-            let me = m.sender
-            let ments = [ownernya, me, ini_kangbaned]
-            let kukiw = `*Kak ${pushname}*`
-                let sections = [
-                {
-	           title: ' ∫ » Sewa Bot? –––––––·•',
-	           rows: [
-	            {title: "〽️ • Sewa", rowId: `donasi`, description: `KLIK UNTUK SEWA BOT`},
-                {title: "📴 • Owner", rowId: `owner`, description: `KLIK UNTUK BERTANYA KEPADA OWNER`}
-	            ]
-                },{
-                title: "⚠︎  ∫ » CHANGE MENU BOT « ✧",
-                rows: [
-                {title: "✦  「 Group 」", rowId: `mgroup`, description: `╰ ► 👥Fitur Buat Grup, Tapi Hati Hati Admin :v`},
-                {title: "✦  「 Webzone 」", rowId: `mwebzone`, description: `╰ ► 📹Cari Film? Sini Tempatnya 🤫`},
-                {title: "✦  「 Downloader 」", rowId: `mdownloader`, description: `╰ ► 📥Buat Download Apaan? 🤨`},
-                {title: "✦  「 Search 」", rowId: `msearch`, description: `╰ ► 🔍Cari Apa Hayo`},
-                {title: "✦  「 Random 」", rowId: `mrandom`, description: `╰ ► ❔Random Moment🗿`},
-                {title: "✦  「 Text Pro 」", rowId: `mtextpro`, description: `╰ ► ❇Teksnya Keren Kan?`},
-                {title: "✦  「 Photo Oxy 」", rowId: `mphotooxy`, description: `╰ ► ♻️Gabut Amat`},
-                {title: "✦  「 Ephoto 」", rowId: `mephoto`, description: `╰ ► 🗳Buat Edit Apaan?`},
-                {title: "✦  「 Fun 」", rowId: `mfun`, description: `╰ ► 🔫Buat Fun² Bro`},
-                {title: "✦  「 Primbon 」", rowId: `mprimbon`, description: `╰ ► 😂Ngakak`},
-                {title: "✦  「 Convert 」", rowId: `mconvert`, description: `╰ ► 🛠Mau Buat Apa?`},
-                {title: "✦  「 Main 」", rowId: `mmain`, description: `╰ ► 💾Senjata Admin & Owner`},
-                {title: "✦  「 Database 」", rowId: `mdatabase`, description: `╰ ► 📁Engak Ada Apa² Disini`},
-                {title: "✦  「 Anonymous 」", rowId: `manonymous`, description: `╰ ► 🎭Fitur Rahasia Jangan Dipake !`},
-                {title: "✦  「 Voice 」", rowId: `mvoice`, description: `╰ ► 🎶Req Lagu Apa Ngab?`},
-                {title: "✦  「 Owner 」", rowId: `mowner`, description: `╰ ► 🎟Jangan Ganggu Ownerku😡`}
-                ]
-                },{
-	           title: ' ∫ » SUPPORT ME –––––––·•',
-	           rows: [
-	            {title: "🎟 • Donasi", rowId: `donasi`, description: `╰ ► 💰 Donasi ♕︎`},
-                {title: "🔴 • Menu", rowId: `menu`, description: `╰ ► 📢 Thanks For Subscribe ♕︎`},
-                {title: "📚 • Github", rowId: `sc`, description: `╰ ► 🎷 Follow My Github ♕︎`}
-	]
-  },
-]
-                tio.sendListMsg(m.chat, kukiw, esce, `*${ucapanWaktu}*`, `Click Here`, sections, fkontak)
-            }
-            break
-            case 'mgroup': {
-goup = `╭──❍「 *Group Menu* 」
-│ *»* ${prefix}linkgroup
-│ *»* ${prefix}ephemeral [option]
-│ *»* ${prefix}setppgc [image]
-│ *»* ${prefix}setname [text]
-│ *»* ${prefix}setdesc [text]
-│ *»* ${prefix}group [option]
-│ *»* ${prefix}editinfo [option]
-│ *»* ${prefix}add @user
-│ *»* ${prefix}kick @user
-│ *»* ${prefix}hidetag [text]
-│ *»* ${prefix}tagall [text]
-│ *»* ${prefix}antilink [on/off]
-│ *»* ${prefix}mute [on/off]
-│ *»* ${prefix}promote @user
-│ *»* ${prefix}demote @user
-│ *»* ${prefix}vote [text]
-│ *»* ${prefix}devote
-│ *»* ${prefix}upvote
-│ *»* ${prefix}cekvote
-│ *»* ${prefix}hapusvote
-│ *»* ${prefix}tagme
-│ *»* ${prefix}totag
-│ *»* ${prefix}quoted
-│ *»* ${prefix}wm
-│ *»* ${prefix}emoji
-│ *»* ${prefix}toqr
-│ *»* ${prefix}gcsearch 
-╰─────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, goup, esce, m, {quoted: fkontak})
-            }
-            break
-      case 'mwebzone': {
-wbzone = `╭──❍「 *Web Zone Menu* 」
-│ *»* ${prefix}playstore
-│ *»* ${prefix}webtoon
-│ *»* ${prefix}dogesticker
-│ *»* ${prefix}patricksticker
-│ *»* ${prefix}lovesticker
-│ *»* ${prefix}gura
-│ *»* ${prefix}paimon
-│ *»* ${prefix}mukelu
-│ *»* ${prefix}sanime
-│ *»* ${prefix}myip
-│
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, wbzone, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mdownloader': {
-dwnloader = `╭──❍「 *Downloader Menu* 」
-│ *»* ${prefix}tiktok [url]
-│ *»* ${prefix}instagram [url]
-│ *»* ${prefix}instagramreel [url]
-│ *»* ${prefix}instagramstory [url]
-│ *»* ${prefix}twitter [url]
-│ *»* ${prefix}facebook [url]
-│ *»* ${prefix}pinterest [url]
-│ *»* ${prefix}ytmp3 [url]
-│ *»* ${prefix}ytmp4 [url]
-│ *»* ${prefix}getmusic [query]
-│ *»* ${prefix}getvideo [query]
-│ *»* ${prefix}umma [url]
-│ *»* ${prefix}ssweb [url]
-│ *»* ${prefix}sshp [url]
-│ *»* ${prefix}ss [url]
-│ *»* ${prefix}ai
-│ *»* ${prefix}aigambar
-│ *»* ${prefix}tts
-│ *»* ${prefix}githubstalk [url]
-│ *»* ${prefix}stalknpm [url]
-│ *»* ${prefix}infogempa
-│ *»* ${prefix}cuaca
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, dwnloader, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'msearch': {
-sarch = `╭──❍「 *Search Menu* 」
-│ *»* ${prefix}play [query]
-│ *»* ${prefix}yts [query]
-│ *»* ${prefix}google [query]
-│ *»* ${prefix}gimage [query]
-│ *»* ${prefix}pinterest [query]
-│ *»* ${prefix}wallpaper [query]
-│ *»* ${prefix}wikimedia [query]
-│ *»* ${prefix}ytsearch [query]
-│ *»* ${prefix}ringtone [query]
-│ *»* ${prefix}totalhit
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, sarch, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mrandom': {
-rndom = `╭──❍「 *Random Menu* 」❍
-│ *»* ${prefix}gbtku
-│ *»* ${prefix}coffe
-│ *»* ${prefix}quotesanime
-│ *»* ${prefix}dilanquote
-│ *»* ${prefix}bucinquote
-│ *»* ${prefix}katasenja
-│ *»* ${prefix}puisi
-│ *»* ${prefix}couple
-│ *»* ${prefix}anime
-│ *»* ${prefix}waifu
-│ *»* ${prefix}sound1-161
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, rndom, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mtextpro': {
-txtpro = `╭──❍「 *Textpro Menu* 」
-│ *»* ${prefix}3dchristmas
-│ *»* ${prefix}3ddeepsea
-│ *»* ${prefix}americanflag
-│ *»* ${prefix}3dscifi
-│ *»* ${prefix}3drainbow
-│ *»* ${prefix}3dwaterpipe
-│ *»* ${prefix}halloweenskeleton
-│ *»* ${prefix}sketch
-│ *»* ${prefix}bluecircuit
-│ *»* ${prefix}space
-│ *»* ${prefix}metallic
-│ *»* ${prefix}fiction
-│ *»* ${prefix}greenhorror
-│ *»* ${prefix}transformer
-│ *»* ${prefix}berry
-│ *»* ${prefix}thunder
-│ *»* ${prefix}magma
-│ *»* ${prefix}3dcrackedstone
-│ *»* ${prefix}3dneonlight
-│ *»* ${prefix}impressiveglitch
-│ *»* ${prefix}naturalleaves
-│ *»* ${prefix}fireworksparkle
-│ *»* ${prefix}matrix
-│ *»* ${prefix}dropwater
-│ *»* ${prefix}harrypotter
-│ *»* ${prefix}foggywindow
-│ *»* ${prefix}neondevils
-│ *»* ${prefix}christmasholiday
-│ *»* ${prefix}3dgradient
-│ *»* ${prefix}blackpink
-│ *»* ${prefix}gluetext
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, txtpro, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mphotooxy': {
-potooxy = `╭──❍「 *Photo Oxy Menu* 」
-│ *»* ${prefix}harrypotter
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, potooxy, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mephoto': {
-ehoto = `╭──❍「 *Ephoto Menu* 」
-│ *»* ${prefix}galaxy
-│ *»* ${prefix}glass
-│ *»* ${prefix}neon
-│ *»* ${prefix}beach
-│ *»* ${prefix}blackpink
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, ehoto, esce, m, {quoted: fkontak})
-            }
-            break
-           case 'mfun': {
-mun = `╭──❍「 *Fun Menu* 」
-│ *»* ${prefix}halah
-│ *»* ${prefix}hilih
-│ *»* ${prefix}huluh
-│ *»* ${prefix}heleh
-│ *»* ${prefix}holoh
-│ *»* ${prefix}jadian
-│ *»* ${prefix}jodohku
-│ *»* ${prefix}apakah
-│ *»* ${prefix}bisakah
-│ *»* ${prefix}kapan
-│ *»* ${prefix}slot
-│ *»* ${prefix}delttt
-│ *»* ${prefix}tictactoe
-│ *»* ${prefix}family100
-│ *»* ${prefix}tebak [option]
-│ *»* ${prefix}math [mode]
-│ *»* ${prefix}suitpvp [@tag]
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, mun, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mprimbon': {
-pimbon = `╭──❍「 *Primbon Menu* 」
-│ *»* ${prefix}nomorhoki
-│ *»* ${prefix}artimimpi
-│ *»* ${prefix}artinama
-│ *»* ${prefix}ramaljodoh
-│ *»* ${prefix}ramaljodohbali
-│ *»* ${prefix}suamiistri
-│ *»* ${prefix}ramalcinta
-│ *»* ${prefix}cocoknama
-│ *»* ${prefix}pasangan
-│ *»* ${prefix}jadiannikah
-│ *»* ${prefix}sifatusaha
-│ *»* ${prefix}rezeki
-│ *»* ${prefix}pekerjaan
-│ *»* ${prefix}nasib
-│ *»* ${prefix}penyakit
-│ *»* ${prefix}tarot
-│ *»* ${prefix}fengshui
-│ *»* ${prefix}haribaik
-│ *»* ${prefix}harisangar
-│ *»* ${prefix}harisial
-│ *»* ${prefix}nagahari
-│ *»* ${prefix}arahrezeki
-│ *»* ${prefix}peruntungan
-│ *»* ${prefix}weton
-│ *»* ${prefix}karakter
-│ *»* ${prefix}keberuntungan
-│ *»* ${prefix}memancing
-│ *»* ${prefix}masasubur
-│ *»* ${prefix}zodiak
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, pimbon, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mconvert': {
-cnvert = `╭──❍「 *Convert Menu* 」
-│ *»* ${prefix}attp
-│ *»* ${prefix}ttp
-│ *»* ${prefix}toimage
-│ *»* ${prefix}removebg
-│ *»* ${prefix}sticker
-│ *»* ${prefix}emojimix
-│ *»* ${prefix}emojimix2
-│ *»* ${prefix}tovideo
-│ *»* ${prefix}togif
-│ *»* ${prefix}tourl
-│ *»* ${prefix}tovn
-│ *»* ${prefix}tomp3
-│ *»* ${prefix}toaudio
-│ *»* ${prefix}ebinary
-│ *»* ${prefix}dbinary
-│ *»* ${prefix}styletext
-│ *»* ${prefix}smeme
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, cnvert, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mmain': {
-min = `╭──❍「 *Main Menu* 」
-│ *»* ${prefix}ping
-│ *»* ${prefix}owner
-│ *»* ${prefix}report
-│ *»* ${prefix}menu / ${prefix}help / ${prefix}?
-│ *»* ${prefix}delete
-│ *»* ${prefix}infochat
-│ *»* ${prefix}quoted
-│ *»* ${prefix}listpc
-│ *»* ${prefix}listgc
-│ *»* ${prefix}listonline
-│ *»* ${prefix}speedtest
-│ *»* ${prefix}menfes
-│ *»* ${prefix}tinyurl [link]
-│ *»* ${prefix}shrturl [link]
-│ *»* ${prefix}linkpoi
-│ *»* ${prefix}bitly
-│ *»* ${prefix}cuttly
-│ *»* ${prefix}runtime
-│ *»* ${prefix}request
-│ *»* ${prefix}ceklimit
-│ *»* ${prefix}$
-│ *»* ${prefix}~>
-│ *»* ${prefix}.>
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, min, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mdatabase': {
-dtbase = `╭──❍「 *Database Menu* 」
-│ *»* ${prefix}setcmd
-│ *»* ${prefix}listcmd
-│ *»* ${prefix}delcmd
-│ *»* ${prefix}lockcmd
-│ *»* ${prefix}addmsg
-│ *»* ${prefix}listmsg
-│ *»* ${prefix}getmsg
-│ *»* ${prefix}delmsg
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, dtbase, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'manonymous': {
-aonymous = `╭──❍「 *Anonymous Menu* 」
-│ *»* ${prefix}anonymous
-│ *»* ${prefix}start
-│ *»* ${prefix}next
-│ *»* ${prefix}keluar
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, aonymous, esce, m, {quoted: fkontak})
-            }
-            break
-      
-case 'mvoice': {
-vice = `╭──❍「 *Voice Changer Menu* 」
-│ *»* ${prefix}bass
-│ *»* ${prefix}blown
-│ *»* ${prefix}deep
-│ *»* ${prefix}earrape
-│ *»* ${prefix}fast
-│ *»* ${prefix}fat
-│ *»* ${prefix}nightcore
-│ *»* ${prefix}reverse
-│ *»* ${prefix}robot
-│ *»* ${prefix}slow
-│ *»* ${prefix}tupai
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, vice, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'mowner': {
-oner = `╭──❍「 *Owner Menu* 」
-│ *»* ${prefix}react [emoji]
-│ *»* ${prefix}chat [option]
-│ *»* ${prefix}join [link]
-│ *»* ${prefix}leave
-│ *»* ${prefix}block @user
-│ *»* ${prefix}unblock @user
-│ *»* ${prefix}bcgroup [text]
-│ *»* ${prefix}bcall [text]
-│ *»* ${prefix}setppbot [image]
-│ *»* ${prefix}setexif
-│ *»* ${prefix}setmenu [option]
-│ *»* ${prefix}setowner
-│ *»* ${prefix}getcase
-│ *»* ${prefix}public
-│ *»* ${prefix}addprem/delprem
-╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: 'Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi' }, type: 1 }]
-            await tio.sendButtonText(m.chat, buttons, oner, esce, m, {quoted: fkontak})
-            }
-            break
-            case 'allmenu': {
-            let ownernya = '0@s.whatsapp.net'
-            let me = m.sender
-            let ments = [ownernya, me, ini_kangbaned]
-                anu = `*${ucapanWaktu}*\n*kak @${me.split('@')[0]}*\n*Powered : @${ini_kangbaned.split('@')[0]}*
+╰──❍
 ╭──❍「 *Group Menu* 」
 │ *»* ${prefix}linkgroup
 │ *»* ${prefix}ephemeral [option]

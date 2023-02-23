@@ -31,7 +31,7 @@ global.limitawal = {
     free: 100
 }
 global.thumb = fs.readFileSync('./media/image/ya.jpg')
-global.faall = fs.readFileSync('./media/image/ya.jpg')
+global.faall = fs.readFileSync('./fto/yaa.jpeg')
 global.mygit = 'https://github.com/AkuIyan'
 global.webmy = 'https://portofolio.akuiyan.repl.co'
 global.ghme = 'https://github.com/AkuIyan'
