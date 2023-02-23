@@ -30,8 +30,8 @@ global.limitawal = {
     premium: "Infinity",
     free: 100
 }
-global.thumb = fs.readFileSync('https://telegra.ph/file/5b49b2565a3f5552ce809.jpg')
-global.faall = fs.readFileSync('https://telegra.ph/file/5b49b2565a3f5552ce809.jpg')
+global.thumb = fs.readFileSync('./media/image/ya.jpg')
+global.faall = fs.readFileSync('./media/image/ya.jpg')
 global.mygit = 'https://github.com/AkuIyan'
 global.webmy = 'https://portofolio.akuiyan.repl.co'
 global.ghme = 'https://github.com/AkuIyan'
